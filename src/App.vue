@@ -651,521 +651,83 @@
 	@import '~vux/src/styles/center.less';
 	@import url("./style/reset.css");
 
-	.trans {
-		/*transition: all .1s;*/
-	}
+	.trans{}
+.vux-slider>.vux-swiper{overflow:auto;height:auto!important}
+.loading{position:absolute;top:0;left:0;width:100%;height:100%;background:#fff;z-index:50}
+.listLoad{height:1.75rem;font-size:.5rem;line-height:1.75rem}
+.dn{display:none!important}
+#app{font-family:'Avenir',Helvetica,Arial,sans-serif;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;text-align:center;color:#2c3e50}
+.tabLi{display:none}
+.show{display:block!important;position:relative}
+.showB{display:block!important;height:auto!important;overflow:auto!important}
+.tabLi>div,.tabLi>ul{display:none}
+.demo-spin-icon-load{animation:ani-demo-spin 1s linear infinite}
+@keyframes ani-demo-spin{from{transform:rotate(0deg)}
+50%{transform:rotate(180deg)}
+to{transform:rotate(360deg)}
+}.demo-spin-col{height:100px;position:relative;border:1px solid #eee}
+.modal{height:100%;width:100%;position:fixed;top:0;left:0;background:#fff;z-index:20}
+.ivu-icon{font-size:2rem!important}
+.ivu-spin-text>div{padding:1rem 0;font-size:1.5rem}
+header{height:8.5rem;position:relative;overflow:hidden;.head_bg{position:absolute;top:0;left:0;width:100%;height:100%}
+.h{height:1.1rem;padding:0 0.5rem;margin-top:0.75rem;position:relative;.hl{img{height:100%}
+height:100%}
+.hr{color:#00aeff;font-size:0.45rem;height:1.1rem;line-height:1.1rem;font-weight:bold;div.fl{height:100%}
+div img{vertical-align:middle;margin:0px 0.2rem;height:.8rem;margin-top:.1rem}
+span{font-size:.5rem;height:.8rem;line-height:.8rem;margin-top:.23rem}
+}}.nb{position:relative;margin:1rem auto 0 auto;color:#fff;text-align:center;.nbc{display:inline-block}
+.img{margin:0 1.5rem;div{width:3rem;height:3rem;background:#fff;border-radius:50%}
+h4{padding:0.6rem 0;font-size:0.5rem;line-height:1em}
+p{line-height:1em;font-size:0.45rem}
+}}}
+.agenda{.years{height:1rem;line-height:1rem;text-align:center;color:#333;background:#E0E0E0;font-size:0.45rem}
+ul{background:#fff}
+li{height:2.625rem;border-bottom:1px solid #eee;width:100%;padding:0 0.4rem;font-size:0.45rem;>div{float:left;height:2.625rem;line-height:2.625rem}
+.time{width:2rem;line-height:1em}
+.nameL{margin-left:1rem;width:3rem;padding-bottom:0}
+.Lpic{width:1.5rem;margin-left:0.5rem}
+.vs{padding:0 .625rem}
+.Rpic div,.Lpic div{width:1.5rem;height:1.5rem;display:inline-block;border-radius:50%;background:#bababa;margin-top:0.5rem}
+.nameL,.nameR,.time{line-height:1em;line-height:0.75rem;position:relative;span{position:absolute;top:50%;left:0;width:100%;transform:translateY(-50%)}
+}.nameR{width:3rem}
+.Rpic{width:1.5rem;margin-right:0.5rem}
+}}ul.videoB li{list-style:none;height:5.5rem;padding:0.75rem 0.5rem;border-bottom:1px solid #eee;background:#fff;.videoL{height:4rem;width:5.5rem;position:relative;margin-right:0.75rem;.play{position:absolute;width:1.75rem;height:1.75rem;top:50%;left:50%;transform:translate(-50%,-50%)}
+.pic{width:100%;height:100%}
+}.videoR{width:8.5rem;height:100%;position:relative;h3{font-size:0.5rem;text-align:left}
+.clearfix{position:absolute;bottom:0;width:100%;height:0.525rem;line-height:0.525rem;font-size:0.45rem;.fr{color:#00aeff;img{height:0.525rem}
+}}}
+}ul.datum{padding:0 0.5rem;background-color:#fff;li{border-bottom:1px solid #eee;height:1.5rem;line-height:1.5rem;font-size:0.45rem}
+}.interval{height:0.5rem}
+.footballer{text-align:left;h2{height:1.5rem;line-height:1.5rem;padding-left:.5rem;font-size:0.5rem;font-weight:400}
+ul{padding:.5rem;background:#fff;padding-bottom:.75rem;li{margin-bottom:.75rem;h3{line-height:1rem;font-weight:normal;font-size:0.45rem}
+p{line-height:1.125rem;font-size:0.45rem;text-indent:2em}
+}}}
+.player{.head{height:1.5rem;line-height:1.5rem;padding-left:0.625rem;font-size:0.625rem;background:#d9d9d9;text-align:left}
+.message{padding:0.625rem;li{height:1rem;line-height:1rem;font-size:0.45rem}
+.fl{width:50%;text-align:left}
+.fr{text-align:left;width:100%}
+}.coach{padding-left:0.625rem;height:3rem;li{width:50%;height:100%;.pic{height:100%;img{width:1.5rem;height:1.5rem;border-radius:50%;background:#E0E0E0;margin-top:0.75rem}
+}.name{margin-top:0.75rem;margin-left:0.5rem;span{font-size:0.45rem;font-weight:bold;line-height:.8rem}
+p{color:#919191;text-align:left;font-size:0.45rem;line-height:.7rem}
+}}}
+}.footballer{.head{background:#D9D9D9;height:1.5rem;line-height:1.5rem;padding-left:0.5rem;padding-right:0.5rem}
+.head,.list{>div{width:30%;text-align:left;font-size:0.45rem;padding-left:0.5rem}
+.headD{width:40%}
+.listD{width:40%}
+.tc{text-align:center}
+.tr{text-align:right}
+}.list{height:2.85rem;line-height:2.85rem;padding-left:0.5rem;padding-right:0.5rem;img{border-radius:50%;width:1.5rem;height:1.5rem;background:#E0E0E0}
+span{padding-left:0.3rem}
+}}.second{.head{height:1.5rem;line-height:1.5rem;padding-left:0.625rem;font-size:0.625rem;background:#d9d9d9;text-align:left}
+table{border-collapse:collapse;width:100%;border:0;tr{border-bottom:1px solid #ddd}
+th{height:1.5rem;font-size:0.45rem;border:0;width:3.25rem;div{height:1rem;line-height:1rem;border-right:1px solid #ddd;margin-top:0.25rem}
+&:last-child div{border:0}
+}td{width:3.25rem;height:1.75rem;font-size:0.45rem;border:0}
+}}.weui-loadmore{top:50%}
+.vux-tab{height:1.75rem}
+.vux-tab .vux-tab-item{height:1.75rem;line-height:1.75rem;font-size:0.625rem}
+.vux-slider>.vux-swiper>.vux-swiper-item{overflow:hidden;height:300px}
 	
-	.vux-slider>.vux-swiper {
-		overflow: auto;
-		height: auto!important;
-	}
+
 	
-	.loading {
-		position: absolute;
-		top: 0;
-		left: 0;
-		width: 100%;
-		height: 100%;
-		background: #fff;
-		z-index: 50;
-		/*line-height: 50px;*/
-	}
-	
-	.listLoad {
-		height: 1.75rem;
-		font-size: .5rem;
-		line-height: 1.75rem;
-	}
-	
-	.dn {
-		display: none!important;
-	}
-	
-	#app {
-		font-family: 'Avenir', Helvetica, Arial, sans-serif;
-		-webkit-font-smoothing: antialiased;
-		-moz-osx-font-smoothing: grayscale;
-		text-align: center;
-		color: #2c3e50;
-	}
-	
-	.tabLi {
-		display: none;
-	}
-	
-	.show {
-		display: block!important;
-		/*height: 300px;
-    	overflow: hidden;*/
-		position: relative;
-	}
-	
-	.showB {
-		display: block!important;
-		height: auto!important;
-		overflow: auto!important;
-	}
-	
-	.tabLi>div,
-	.tabLi>ul {
-		display: none;
-	}
-	/*$txcolor: #00aeff;*/
-	/*$fonts-t:0.5rem;*/
-	/*0.45rem:0.45rem;*/
-	/*0.275rem:0.275rem;*/
-	
-	.demo-spin-icon-load {
-		animation: ani-demo-spin 1s linear infinite;
-	}
-	
-	@keyframes ani-demo-spin {
-		from {
-			transform: rotate(0deg);
-		}
-		50% {
-			transform: rotate(180deg);
-		}
-		to {
-			transform: rotate(360deg);
-		}
-	}
-	
-	.demo-spin-col {
-		height: 100px;
-		position: relative;
-		border: 1px solid #eee;
-	}
-	
-	.modal {
-		height: 100%;
-		width: 100%;
-		position: fixed;
-		top: 0;
-		left: 0;
-		background: #fff;
-		z-index: 20;
-	}
-	
-	.ivu-icon {
-		font-size: 2rem!important;
-	}
-	
-	.ivu-spin-text>div {
-		padding: 1rem 0;
-		font-size: 1.5rem;
-	}
-	
-	header {
-		height: 8.5rem;
-		position: relative;
-		overflow: hidden;
-		.head_bg {
-			position: absolute;
-			top: 0;
-			left: 0;
-			width: 100%;
-			height: 100%;
-		}
-		.h {
-			height: 1.1rem;
-			padding: 0 0.5rem;
-			margin-top: 0.75rem;
-			position: relative;
-			.hl {
-				img {
-					height: 100%;
-				}
-				height: 100%;
-			}
-			.hr {
-				color: #00aeff;
-				font-size: 0.45rem;
-				height: 1.1rem;
-				line-height: 1.1rem;
-				font-weight: bold;
-				div.fl {
-					height: 100%;
-				}
-				div img {
-					vertical-align: middle;
-					margin: 0px 0.2rem;
-					height: .8rem;
-					margin-top: .1rem;
-				}
-				span {
-					/* height: 100%; */
-					/* line-height: 1.1rem; */
-					font-size: .5rem;
-					height: .8rem;
-					line-height: .8rem;
-					margin-top: .23rem;
-				}
-			}
-		}
-		.nb {
-			position: relative;
-			margin: 1rem auto 0 auto;
-			color: #fff;
-			text-align: center;
-			.nbc {
-				display: inline-block;
-			}
-			.img {
-				margin: 0 1.5rem;
-				div {
-					width: 3rem;
-					height: 3rem;
-					background: #fff;
-					border-radius: 50%;
-				}
-				h4 {
-					padding: 0.6rem 0;
-					font-size: 0.5rem;
-					line-height: 1em;
-				}
-				p {
-					line-height: 1em;
-					font-size: 0.45rem;
-				}
-			}
-		}
-	}
-	/*赛程*/
-	
-	.agenda {
-		.years {
-			height: 1rem;
-			line-height: 1rem;
-			text-align: center;
-			color: #333;
-			background: #E0E0E0;
-			font-size: 0.45rem;
-		}
-		ul {
-			background: #fff;
-		}
-		li {
-			height: 2.625rem;
-			border-bottom: 1px solid #eee;
-			width: 100%;
-			padding: 0 0.4rem;
-			font-size: 0.45rem;
-			>div {
-				float: left;
-				height: 2.625rem;
-				line-height: 2.625rem;
-			}
-			.time {
-				width: 2rem;
-				line-height: 1em;
-			}
-			.nameL {
-				margin-left: 1rem;
-				width: 3rem;
-				padding-bottom: 0;
-			}
-			.Lpic {
-				width: 1.5rem;
-				margin-left: 0.5rem;
-			}
-			.vs {
-				padding: 0 .625rem;
-			}
-			.Rpic div,
-			.Lpic div {
-				width: 1.5rem;
-				height: 1.5rem;
-				display: inline-block;
-				border-radius: 50%;
-				background: #bababa;
-				margin-top: 0.5rem
-			}
-			.nameL,
-			.nameR,
-			.time {
-				line-height: 1em;
-				line-height: 0.75rem;
-				position: relative;
-				span {
-					position: absolute;
-					top: 50%;
-					left: 0;
-					width: 100%;
-					transform: translateY(-50%);
-				}
-			}
-			.nameR {
-				width: 3rem;
-			}
-			.Rpic {
-				width: 1.5rem;
-				margin-right: 0.5rem;
-			}
-		}
-	}
-	/*视频列表*/
-	
-	ul.videoB li {
-		list-style: none;
-		height: 5.5rem;
-		padding: 0.75rem 0.5rem;
-		border-bottom: 1px solid #eee;
-		background: #fff;
-		.videoL {
-			height: 4rem;
-			width: 5.5rem;
-			position: relative;
-			margin-right: 0.75rem;
-			.play {
-				position: absolute;
-				width: 1.75rem;
-				height: 1.75rem;
-				top: 50%;
-				left: 50%;
-				transform: translate(-50%, -50%);
-			}
-			.pic {
-				width: 100%;
-				height: 100%;
-			}
-		}
-		.videoR {
-			width: 8.5rem;
-			height: 100%;
-			position: relative;
-			h3 {
-				font-size: 0.5rem;
-				text-align: left;
-			}
-			.clearfix {
-				position: absolute;
-				bottom: 0;
-				width: 100%;
-				height: 0.525rem;
-				line-height: 0.525rem;
-				font-size: 0.45rem;
-				.fr {
-					color: #00aeff;
-					img {
-						height: 0.525rem;
-					}
-				}
-			}
-		}
-	}
-	/*个人资料*/
-	
-	ul.datum {
-		padding: 0 0.5rem;
-		background-color: #fff;
-		li {
-			border-bottom: 1px solid #eee;
-			height: 1.5rem;
-			line-height: 1.5rem;
-			font-size: 0.45rem;
-		}
-	}
-	
-	.interval {
-		height: 0.5rem;
-	}
-	
-	.footballer {
-		text-align: left;
-		h2 {
-			height: 1.5rem;
-			line-height: 1.5rem;
-			padding-left: .5rem;
-			font-size: 0.5rem;
-			font-weight: 400;
-		}
-		ul {
-			padding: .5rem;
-			background: #fff;
-			padding-bottom: .75rem;
-			li {
-				margin-bottom: .75rem;
-				h3 {
-					line-height: 1rem;
-					font-weight: normal;
-					font-size: 0.45rem;
-				}
-				p {
-					line-height: 1.125rem;
-					font-size: 0.45rem;
-					text-indent: 2em;
-				}
-			}
-		}
-	}
-	/*球员信息*/
-	
-	.player {
-		.head {
-			height: 1.5rem;
-			line-height: 1.5rem;
-			padding-left: 0.625rem;
-			font-size: 0.625rem;
-			background: #d9d9d9;
-			text-align: left;
-		}
-		.message {
-			padding: 0.625rem;
-			li {
-				height: 1rem;
-				line-height: 1rem;
-				font-size: 0.45rem;
-			}
-			.fl {
-				width: 50%;
-				text-align: left;
-			}
-			.fr {
-				text-align: left;
-				width: 100%;
-			}
-		}
-		.coach {
-			padding-left: 0.625rem;
-			height: 3rem;
-			li {
-				width: 50%;
-				height: 100%;
-				.pic {
-					height: 100%;
-					img {
-						width: 1.5rem;
-						height: 1.5rem;
-						border-radius: 50%;
-						background: #E0E0E0;
-						margin-top: 0.75rem;
-					}
-				}
-				.name {
-					/*height: 100%;*/
-					margin-top: 0.75rem;
-					margin-left: 0.5rem;
-					span {
-						font-size: 0.45rem;
-						font-weight: bold;
-						line-height: .8rem;
-					}
-					p {
-						color: #919191;
-						text-align: left;
-						font-size: 0.45rem;
-						line-height: .7rem;
-					}
-				}
-			}
-		}
-	}
-	
-	.footballer {
-		.head {
-			background: #D9D9D9;
-			height: 1.5rem;
-			line-height: 1.5rem;
-			padding-left: 0.5rem;
-			padding-right: 0.5rem;
-		}
-		.head,
-		.list {
-			>div {
-				width: 30%;
-				text-align: left;
-				font-size: 0.45rem;
-				padding-left: 0.5rem;
-			}
-			.headD {
-				width: 40%;
-			}
-			.listD {
-				width: 40%;
-			}
-			.tc {
-				text-align: center;
-			}
-			.tr {
-				text-align: right;
-			}
-		}
-		.list {
-			height: 2.85rem;
-			line-height: 2.85rem;
-			padding-left: 0.5rem;
-			padding-right: 0.5rem;
-			img {
-				border-radius: 50%;
-				width: 1.5rem;
-				height: 1.5rem;
-				background: #E0E0E0;
-			}
-			span {
-				padding-left: 0.3rem;
-			}
-		}
-	}
-	/*转会*/
-	
-	.second {
-		.head {
-			height: 1.5rem;
-			line-height: 1.5rem;
-			padding-left: 0.625rem;
-			font-size: 0.625rem;
-			background: #d9d9d9;
-			text-align: left;
-		}
-		table {
-			border-collapse: collapse;
-			width: 100%;
-			border: 0;
-			tr {
-				border-bottom: 1px solid #ddd;
-			}
-			th {
-				height: 1.5rem;
-				font-size: 0.45rem;
-				border: 0;
-				width: 3.25rem;
-				div {
-					height: 1rem;
-					line-height: 1rem;
-					border-right: 1px solid #ddd;
-					margin-top: 0.25rem;
-				}
-				&:last-child div {
-					border: 0;
-				}
-			}
-			td {
-				width: 3.25rem;
-				height: 1.75rem;
-				/*line-height: 1.75rem;*/
-				font-size: 0.45rem;
-				border: 0;
-			}
-		}
-	}
-	
-	.weui-loadmore {
-		top: 50%;
-	}
-	
-	.vux-tab {
-		height: 1.75rem;
-	}
-	
-	.vux-tab .vux-tab-item {
-		height: 1.75rem;
-		line-height: 1.75rem;
-		font-size: 0.625rem;
-	}
-	
-	.vux-slider>.vux-swiper>.vux-swiper-item {
-		overflow: hidden;
-		height: 300px;
-	}
 </style>
