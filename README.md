@@ -1,5 +1,5 @@
 # vuex-team test
-[demo](https://lpw94.github.io/team)
+[demo](https://lpw94.github.io/team).
 
 > A Vue.js project
 
